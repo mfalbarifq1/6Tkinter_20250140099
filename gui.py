@@ -25,3 +25,8 @@ root.configure(bg=BG)
 # 1 label judul
 tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan",
          font=("Arial", 16, "bold"), bg=BG, fg=FG).pack(pady=20)
+
+# 10 input nilai (label + entry sejajar memakai grid di dalam Frame)
+frame = tk.Frame(root, bg=BG)
+frame.pack(pady=5)
+
