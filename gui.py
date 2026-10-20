@@ -30,3 +30,10 @@ tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan",
 frame = tk.Frame(root, bg=BG)
 frame.pack(pady=5)
 
+entries = []
+for i in range(10):
+    tk.Label(frame, text=f"Nilai Mata Pelajaran {i + 1}:",
+             bg=BG, fg=FG, anchor="e", width=22).grid(row=i, column=0, padx=5, pady=5)
+    e = tk.Entry(frame, width=10, justify="center")
+    e.grid(row=i, column=1, padx=5, pady=5)
+    entries.append(e)
