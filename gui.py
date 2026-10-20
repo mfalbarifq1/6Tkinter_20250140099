@@ -37,3 +37,18 @@ for i in range(10):
     e = tk.Entry(frame, width=10, justify="center")
     e.grid(row=i, column=1, padx=5, pady=5)
     entries.append(e)
+
+# Input pilihan jurusan (dropdown)
+tk.Label(root, text="Pilihan Jurusan Anda:", bg=BG, fg=FG).pack(pady=(15, 2))
+var_jurusan = tk.StringVar(value="Teknologi Informasi")
+opsi = tk.OptionMenu(root, var_jurusan, "Teknologi Informasi", "Sistem Informasi",
+                     "Teknik Informatika", "Teknik Elektro", "Manajemen")
+opsi.config(bg=BG, fg=FG, activebackground=BG, activeforeground=FG,
+            highlightthickness=0)
+opsi.pack()
+
+# 1 button
+tk.Button(root, text="Hasil Prediksi", command=hasil_prediksi,
+          font=("Arial", 11, "bold"), padx=10, pady=4).pack(pady=20)
+
+root.mainloop()
