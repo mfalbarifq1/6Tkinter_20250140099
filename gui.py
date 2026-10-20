@@ -15,3 +15,9 @@ def hasil_prediksi():
                            font=("Arial", 12, "bold"), bg=BG, fg="#00d4ff")
     label_hasil.pack(expand=True)
 
+
+# Jendela utama
+root = tk.Tk()
+root.title("Aplikasi Prediksi Prodi Pilihan")
+root.geometry("420x720")
+root.configure(bg=BG)
